@@ -1,0 +1,175 @@
+#title {
+  height: 100%;
+  background-image:url(../img/section01_bg.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  position: relative;
+  }
+#title::before{
+  content: "";
+  background-image:url(../img/sec01_logo.png);
+  background-size:cover;
+  width: 1508px;
+  height: 388px;
+  margin-top: 60px;
+  animation-name: fadeIn; /* 애니메이션 이름 */
+  animation-duration: 1.5s; /* 애니메이션 시간 */
+  /*! animation-iteration-count: 3; */ /* 애니메이션 반복횟수 */
+  /*! animation-direction: alternate; */ /* 애니메이션 진행방향:왔다갔다 */
+}
+@keyframes fadeIn{
+  0%{ /* 처음 상태 */
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  100%{ /* 끝 상태 */
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+  #title form.search {
+  width: 700px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 35px;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  transform: translateX(70px);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  }
+@keyframes moveLeft{
+  0%{
+    transform: translateX(70px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+#title form.search::before{
+  content: "";
+  background-image: url(../img/search_icon.png);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  position: absolute;
+  left: 30px;
+}
+  #title form.search input {
+  border: none;
+  padding-left: 30px;
+  font-size: 17px;
+  line-height: 1.6;
+  width: 65%;
+  transition: all 0.5s;
+  }
+  #title form.search input:focus {
+/*  :focus input태그안에 커서를 위치시키는 행위    */    
+    outline: none;
+}
+  #title form.search button {    
+  width: 180px;
+  background-color: #e0462e;
+  color: #fff;
+  border-radius: calc(54px/2);
+  border: none;
+  font-size: 16px;
+  line-height: 3.2;
+  cursor: pointer;
+  }
+  #title h2 {
+    
+  }
+  #title ul.hash {    
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  column-gap: 40px;
+  }
+  #title ul.hash li {    
+  width: auto;
+  padding: 0 20px;
+  border: solid 1px #edecef;
+  border-radius: calc(38px/2);
+  font-size: 12px;
+  height: 35px;
+  line-height: 35px;
+  }
+  #title ul.hash li a {
+    
+  }
+#title ul.hash li a:hover {
+  color:yellowgreen;
+}
+#title span{
+  position: absolute;
+  bottom: 20px;
+}
+#title span::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #000;
+  border-top:transparent;
+  border-left: transparent;
+  transform: rotate(45deg);
+  margin-bottom: 15px;
+  animation-name: scroll;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll{
+  0%{
+    transform: translateY(0px) rotate(45deg);
+  }
+  100%{
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+#title span::after{
+  content: "scroll";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
