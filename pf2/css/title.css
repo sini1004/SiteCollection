@@ -1,0 +1,211 @@
+#title{
+  height: 950px;
+  background-color: #eee;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#title::before{
+ content : "";
+  display: block;
+  position : absolute;
+  width : 75%;
+  height : 100%;
+  background-color : black;  
+}
+
+#title .inner{
+  width: 80%;
+  z-index: 0;
+  color: #fff;
+  position: relative;
+  height: 673px; /*title 하단에 영상이 배치할 수 있게 해준다.*/
+}
+#title .wslide {
+  width: 80%;
+  z-index: 1;
+  height: 673px;
+  margin-bottom: 0;
+}
+#title .wslide .inner {
+  display: flex;
+}
+#title .inner .h2{
+  position: relative;
+  z-index : 1;
+  font-size: 60px;
+  margin-bottom: 20px;
+  overflow : hidden; /*글씨가 잘려서 올라온다.*/
+}
+#title .inner h2 span{
+  display:  block;
+/*   animation-name: h2up; */
+  /* animation-duration: 2s;
+  animation-fill-mode: foward;
+  animation-direction: reverse; 
+  animation-timing-function: ease-out;  */
+  
+  transform: translateY(100%);
+  transition: transform 3s;
+}
+.h2up {
+  transform: translateY(0%) !important;
+}
+@keyframes h2up{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(100%);/*h2자체의 기준으로 이동이 된다.*/
+    opacity : 0.4;/*페이드 인을 할 때는 opacity를 쓴다.*/
+  }
+}
+#title .inner p{
+  position: relative; /**/
+  z-index : 1; /**/
+  overflow: hidden;
+}
+#title .inner p span{
+  display: block; /*block이 아니면 애니메인션이 먹지 않는다. why? inline의 속성 : 다른 사람을 밀칠 수 없다*/
+/*   animation-name: pup; */
+  /* animation-duration: 2s;
+  animation-fill-mode: foward;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+   */  
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 600;
+  transform: translateY(100%);
+  transition: transform 3.3s;
+}
+.pup {
+  transform: translateY(0%) !important;
+}
+@keyframes pup{
+  0%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(100%);
+    opacity: 0.4;/*h2자체의 기준으로 이동이 된다.*/
+  }
+}
+#title .inner video, #title .inner img{
+  width: 1188px;
+  height: 670px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#title .inner video[poster]{
+  width: 100%;
+  height: 100%;
+}
+#title span.titleaside {
+  position: absolute;
+  right: calc(20% / 4 - 82px );
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  justify-content: space-between;
+  width: 164px;
+}
+#title span.titleaside a.campaign{
+  /*! position: absolute; */
+  /*! top : 40%; */
+  /*! right : -100px; */
+  /*! transform: translateX(170px) rotate(90deg); */
+  /*! transform-origin: 0 100%; */
+  font-size: 13px;
+  font-weight: 600;
+  color: #aaa;
+  transform: rotate(90deg) translateX(78px);
+}
+#title span.titleaside a.scroll{
+  font-size: 11px;
+  position: relative;
+  text-transform: uppercase;
+}
+@keyframes textcolor{
+  0%{
+   color:black;
+  }
+  15%{
+   color:yellowgreen;
+  }
+  30%{
+   color:black;
+  }
+  100%{
+    color:black;
+  }
+}
+#title span.titleaside a.scroll::before{
+  content: "";
+  width : 10px;
+  height : 10px;
+  display: block;
+  position: absolute;
+  top : -13px;
+  border : 4px solid;
+  border-left :transparent;
+  border-top : transparent;
+  transform: scale(0.5) translateY(-15px) rotate(45deg);
+  left : calc(50% - 7.5px); /*width 에서 반을 나눈 값을 빼준다.*/
+  color : #000;
+  animation-name: scrollani1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollani1{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity : 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+#title span.titleaside a.scroll::after{
+  content: "";
+  width : 10px;
+  height : 10px;
+  display: block;
+  position: absolute;
+  top : -22px;
+  border : 4px solid;
+  border-left :transparent;
+  border-top : transparent;
+  transform: scale(0.5) translateY(-15px) rotate(45deg);
+  left : calc(50% - 7.5px); /*중앙으로 배치하기*/
+  color : #333;
+  animation-name: scrollani2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes scrollani2{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity : 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

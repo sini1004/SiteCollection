@@ -1,0 +1,322 @@
+footer {
+    background-color: #000000;
+    color: #fff;
+    line-height: 1.7;
+    position: relative;
+  }
+  footer::before{
+    content: "Urban Launderette";
+    color: #3f3d3d;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    font-size: 0;
+    font-weight: 700;
+  }
+  footer a{
+    color: #fff;
+  }
+  footer div.inner {
+    align-items: flex-end;
+    position: relative;
+  }
+  footer div.inner h1 {
+    
+  }
+  footer div.inner .left {
+    
+  }
+  footer div.inner .left .tel {
+    font-size: 15px;
+  }
+  footer div.inner .left .tel p.phone {
+    
+  }
+  footer div.inner .left .tel p.phone strong {
+    display: block;
+    font-size: 40px;
+    line-height: 1;
+    margin: 8px 0 26px;
+  }
+  footer div.inner .left .tel p:not(.phone) {
+    
+  }
+  footer div.inner .left address {
+    margin-bottom: 100px;
+    margin-top: 60px;
+    color: #999;
+    font-size: 14px;
+  }
+footer div.inner .left address span{
+    display: none;
+}
+  footer div.inner .left ul.bnb {    
+    transform: translateX(-14px);
+  }
+  footer div.inner .left ul.bnb li {
+    
+  }
+  footer div.inner .left ul.bnb li a {
+    padding: 15px 14px;
+    font-size: 14px;
+  }
+  footer div.inner .left ul.bnb li:not(:first-child) a{
+    color: #999;
+  }
+  footer div.inner .right {
+    
+  }
+  footer div.inner .right ul.sns {    
+    margin-bottom: 100px;
+  }
+  footer div.inner .right ul.sns li {
+    margin: 0 15px;
+  }
+  footer div.inner .right ul.sns li a {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    transition: all 0.7s;
+  }
+  footer div.inner .right ul.sns li:nth-child(1) a {
+    background-image: url(../img/facebook.svg);
+  }
+  footer div.inner .right ul.sns li:nth-child(2) a {
+    background-image: url(../img/insta.svg);
+  }
+  footer div.inner .right ul.sns li:nth-child(3) a {
+    background-image: url(../img/blog.svg);
+  }
+  footer div.inner .right > a.email {
+    color: #999;
+  }
+  footer .inner .right > a.email::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-top:1px solid rgba(255,255,255,0.15);
+    left: 0;
+    width: 100%;
+    transform: translateY(-40px);
+  }
+  footer a.top{
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    font-size: 0;
+    background-color: #000;
+    top: -70px;
+    left: calc(50% - 30px);
+    padding-right: 0;
+transform: rotate(-90deg);
+    transition: all 0.5s;
+  }
+  footer a.top:hover{
+    background-color: #444;
+    transition: all 0.7s;
+  }
+  footer a.top::before{
+    top: 50%;
+    width: 20px;
+    right: calc(50% - 7px);
+  }
+  footer a.top::after{
+    right: calc(50% - 8px);
+    top: calc(50% - 4px);
+  }
+  
+  
+  /* 내가 작업 */
+/* footer {
+    background-color: #000;
+    position: relative;
+    color: #fff;
+}
+footer .inner .top {
+    width: 100%;
+    margin-bottom: 50px;
+}
+footer .inner .top .tel {
+
+}
+footer .inner .top .tel p {
+    font-size: 15px;
+    color: #fff;
+    letter-spacing: -0.01em;
+}
+footer .inner .top .tel p {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .inner .top .tel p strong {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-top: 8px;
+    display: block;
+    text-indent: -3px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+footer .inner .top .addsns {
+    margin: 40px 0 11px;
+}
+footer .inner .top .addsns address{
+    font-size: 14px;
+    color: #888;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    line-height: 1.7;
+}
+footer .inner .top .addsns address .br {
+    display: none; 
+}
+footer .inner .top .addsns ul {
+
+}
+footer .inner .top .addsns ul li {
+    font-size: 0;
+    margin: 0 15px;
+}
+footer .inner .top .addsns ul li:nth-child(1) {
+    margin-left:0;
+}
+footer .inner .top .addsns ul li:nth-child(3) {
+    margin-right:0;
+}
+footer .inner .top .addsns ul li a {
+    width: 26px;
+    height: 28px;
+    display: block;
+    background-image: url(../img/facebook.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    transition: all 0.7s;
+}
+footer .inner .top .addsns ul li:nth-child(1) a {
+    background-image: url(../img/facebook.svg);
+}
+footer .inner .top .addsns ul li:nth-child(2) a {
+    background-image: url(../img/insta.svg);
+}
+footer .inner .top .addsns ul li:nth-child(3) a {
+    background-image: url(../img/blog.svg);
+}
+footer .inner .bottom {
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 49px;
+}
+footer .inner .bottom .bnb {
+    gap: 20px;
+}
+footer .inner .bottom .bnb li {
+    
+}
+footer .inner .bottom .bnb li a {
+    font-size: 13px;
+    padding: 15px 10px;
+    color: white;
+    font-weight: 600;   
+}
+footer .inner .bottom .bnb li:not(:first-child) a {
+    color:#888;
+}
+footer .inner .bottom a.email {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #888;  
+} 
+footer .more::before{    
+    transform: rotate(-90deg);
+    right: calc(50% - 11px);
+    width: 20px;
+}
+footer .more::after {
+    transform: rotate(-45deg);
+    top: calc(50% - 8px);
+    right: 25px;
+}
+footer a.top {    
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    font-size: 0;
+    left: calc(50% - 30px);
+    background: #000;
+    top: -70px;
+    padding-right: 0;
+    color: white;
+}
+footer a.top:hover {
+    background-color: #444;
+    transition: all 0.7s;
+}
+*/
+
+
+aside{
+   position: sticky;
+   right: 30px;
+   bottom: 30px;
+   z-index: 999;
+}
+aside ul{    
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+aside a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    margin: 10px 0;
+}
+aside ul li{
+}
+aside ul li a.shop{
+    background-color: #000;
+    color: white;
+}
+aside ul li a.kakao{
+    background-color: #fbcc34;
+    color: #000;
+}
+aside ul li a.kakao:hover{
+    -webkit-animation: pulse 1.6s infinite;
+    animation: pulse 1.6s infinite;
+}
+@-webkit-keyframes pulse {  
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(251, 204, 51, .85);
+      box-shadow: 0 0 0 0 rgba(251, 204, 51, .85);
+    }
+    
+    70% {
+      -webkit-box-shadow: 0 0 0 2em rgba(251, 204, 51, 0);
+      box-shadow: 0 0 0 2em rgba(251, 204, 51, 0);
+    }
+    
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(251, 204, 51, 0);
+      box-shadow: 0 0 0 0 rgba(251, 204, 51, 0);
+    }  
+  }
+
+
+
+

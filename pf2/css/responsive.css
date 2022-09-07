@@ -1,0 +1,375 @@
+@media screen and (max-width:1200px){
+  
+}
+
+@media screen and (max-width:768px){
+  /* 공통h 태그 스타일링 */
+  .h2{
+    font-weight: bold;
+    font-size: 7.5vw;
+  }
+  .h2 small {
+    display: block;
+  }
+  .h3{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .h4{
+    font-size: 5vw;
+    font-weight: 700;
+    color: #111;
+  }
+  .h5{
+    font-weight: 700;
+    font-size: 3vw;
+    margin-bottom: 15px;
+    color: #aaa;
+    line-height: 2;
+  }
+  
+  /* padding */
+  .padding50{
+    padding: 6vw;
+  }
+  .padding100{
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+  }
+  
+  a.more::before {    
+    width: 25px;
+    top: calc(50% + -1px);
+  }
+  a.more::after {    
+    top: calc(50% - 4px);
+  }
+  
+  header .inner {
+    width: 93%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  header .inner h1 a {
+    font-size: 4.5vw;
+  }
+  header .inner .wgnb {    
+    position: absolute;
+    left: 0;
+/*     top: calc(50% - 18px) */
+  }
+  header .inner ul.enb {
+    display: none;
+  }
+  header .inner .wgnb a.ham {    
+    transform: scale(0.7);
+  }
+  
+/* title */
+  #title {
+    height: 93vh;
+  }
+  #title::before {
+    width: 100%;
+  }
+  #title .inner {    
+    /*! height: 252vw; */
+    /*! justify-content: flex-start; */
+  }
+  #title .inner .h2 {
+    font-size: 8vw;
+    margin-top: 20px;
+  }
+  #title .inner p span {
+    font-size: 4vw;
+    font-weight: 400
+  }
+  #title .inner iframe {
+    height: 50vw;
+    order: -1;
+    position: static;
+    width: 100%;
+  }  
+  #title span.titleaside {
+  display: none;
+  }
+  
+  /* service */
+  #service {
+    padding-bottom:25vw;
+  }
+  #service .inner {
+    
+  }
+  #service .inner hgroup h2.h5{
+    
+  }
+  #service .inner hgroup h3 {
+    line-break: 1.2;
+  }
+  #service .inner .contents {
+    margin-top: 7vw;
+    row-gap: 15vw;
+    padding-bottom: 10px;
+  }
+  #service .inner .contents article {
+    width: 100%;
+    transform: initial !important;
+  }
+  #service .inner .contents article a::before {
+    height: 80vw;
+  }
+  #service .inner .contents a.more, #space .inner a.more,
+  #story .inner a.more, #miele .inner a.more, #contact .inner a.more {
+    font-size: 10px;
+    width: 60px;
+  }
+  
+  
+  /* space*/
+  #space{
+    padding: 21.875vw 0 5.2vw;
+  }  
+  #space .inner::before{
+    content: "";
+    display: block;
+    height: 200px;
+    background-image: url(../img/main-space-01.jpg);
+    background-size: cover;
+  }
+  #space .inner, #miele .inner, #contact .inner {
+    margin-left: 0;
+    padding-left: 10%;
+    height: 72.91666vw;
+    margin-right: 0;
+    padding-right: 10%;
+    background-color: #eee;
+    background-size: cover;
+    background-image: none;
+  }  
+  #space .inner{
+    height: calc(72.91666vw + 70.4166vw);
+    padding-top: 50px;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+    height: auto;
+  }
+  #space .inner h2, #miele .inner h2{
+    font-size: 9.7vw;
+  }
+  #space .inner a.more::before{
+    background-color: #333;
+  }
+  #space .inner > :not(h2){
+    color: #333;
+  }
+  #space .inner a.more::before{
+    background-color: #333;
+  }
+  #space .inner a.more::after {
+    border-color: #333;
+  }
+  
+  /* story */
+  #story .inner ul.contents {
+    margin-top: 7vw;
+    margin-bottom: 6vw;
+    flex-direction: column;
+  }
+  #story .inner ul.contents li {
+    width: 100%;
+    padding: 5vw 0;
+  }
+  #story .inner ul.contents li::before {
+    transform: scale(0.8);
+  }
+  #story .inner ul.contents li:nth-child(2) {
+    border: 0;
+  }
+  #story .inner ul.contents li h5 {
+    margin-top: 2vw;
+  }
+  #story .inner ul.contents li p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  /* miele */
+  #miele {
+    padding: 10px 0 0 0;
+  }
+  #miele .inner{
+    background-image: none;
+    height: auto;
+    padding-top: 0;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+  }
+  #miele .inner::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50.063vw;
+    background-image: url(../img/main-miele-04.jpg);
+    background-size: cover;
+    transform: scaleX(1.3);
+    background-position: center;
+  }
+  #miele .inner > * {
+    color: #000;
+  }
+  #miele .inner p {
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  #miele::after {
+    display: none;
+  }
+  
+  /* contact */
+   #contact{
+    padding-top: 0;
+    background-color: #eee;
+  }  
+  #contact .inner{
+    height: auto;
+    z-index: 1;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+  }
+  #contact .inner::before{
+    position: static;
+    width: 100%;
+    height: 91.14583vw;
+  }
+  #contact .inner h2{
+    font-size: 30px;
+  }
+  #contact::after{
+    z-index: 0;
+    width: 100%;
+    height: 174px;
+    top: 0;
+    bottom: initial;
+  }
+  #contact .inner h2 br:nth-of-type(2){
+    display: none;
+  }
+  
+  /* instagram */
+  #instagram .inner {
+    overflow: hidden;
+    width: 90%;
+    margin-right: 0;
+  }
+  #instagram .inner ul {
+    flex-wrap: initial;
+    width: calc(533.3%);
+    gap: 0px;
+  }
+  #instagram .inner ul li {    
+    flex-basis: initial;
+    width: 100%;
+    padding-right: 30px;
+  }
+  
+  
+  /* aside */
+  /* aside {
+    position: sticky;
+    right: 10px;
+    bottom: 10px;
+  }
+  aside ul {    
+    right: 10px;
+    bottom: 10px;
+  } */
+  
+  /* footer 내가함*/
+/*   footer a.top {
+    display: none;
+  }
+  footer .inner .top {    
+  }
+  footer .inner .top .addsns {
+    flex-direction: column;  
+    position: relative;
+  }
+  footer .inner .top .addsns ul {
+    position: absolute;
+    
+    top: 80px;
+  }
+  footer .inner .top .addsns address {
+    font-size: 2.8vw;
+  }
+  footer .inner .top .addsns address .br {
+    display: block;
+  }
+  footer .inner .bottom {
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 49px;
+  }
+  footer .inner .bottom .bnb li a {
+    font-size: 2.6vw;
+    padding: 0;
+  }
+  footer .inner .bottom .bnb {
+    gap: 15px;
+  } */
+  
+  /* 하단   */
+  footer div.inner{
+    display: block;
+  }
+  footer div.inner .left address{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  footer div.inner .left address span {
+    display: block;
+  }
+  footer div.inner .left ul.bnb{
+    transform: translateX(0px);
+  }
+  footer div.inner .left ul.bnb li a{
+    font-size: 11px;
+    letter-spacing: -1px;
+    padding: 15px 5px;
+  }
+  footer div.inner .left .tel p.phone {
+    font-size: 13px;
+  }
+  footer div.inner .left .tel p:not(.phone) {
+    font-size: 12px;
+  }  
+  footer div.inner .right{
+    margin-top:20px;
+  }
+  footer div.inner .right ul.sns{
+    margin-bottom: 70px;
+  }
+
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
