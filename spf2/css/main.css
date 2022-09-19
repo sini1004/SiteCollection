@@ -5,3 +5,28 @@
 /* header */
 
 
+/* kanoBusines */
+
+/* kanoBrand */
+
+/* kanoHistory */
+
+/* kanoNews */
+
+/* kanoInquiry */
+
+/* footer */
+footer {
+  border-top: 1px solid #ddd;
+  padding: 80px 0;
+}
+.footer-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.footer-sns ul{
+  display: flex;
+}
+.footer-sns ul li {
+  flex: 1;
+}

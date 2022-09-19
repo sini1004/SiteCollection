@@ -16,5 +16,7 @@ grid system을 이용한 사이트 연습
 ## pf5. 카카오프렌즈샵 사이트
 모바일 적응형 사이트 연습
 
-## spf1. 도시락 사이트
+## spf1. dosiraktong 사이트
 반응형, jQuery를 이용한 사이트 연습
+
+## spf2. Kano 사이트
