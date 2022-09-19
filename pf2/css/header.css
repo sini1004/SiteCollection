@@ -1,0 +1,150 @@
+header {
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1; /**/
+  transform: translateY(120px);
+  position: relative;
+  margin-top: -120px;
+}
+header a{
+  color : #fff;
+/*   display: block; */
+  /*! transform: translateY(16%); */
+} 
+header .inner {
+  height: 100px;
+  padding-top: 20px; /*총 영역이 160px*/
+  /*! align-items: flex-end; */
+  position: relative;
+}
+header .inner h1 {
+  /*! position: absolute; */
+  /*! left: calc(50% - 100px); */
+  /*! width: 200px; */
+  /*! text-align: center; */
+  order: 2;
+}
+header .inner .wgnb{
+  order: 1;
+}
+header .inner .wgnb a.ham{
+  font-size: 0;
+  width: 34px;
+  height: 30px;
+  display: block;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  z-index: 99999;
+}
+header .inner .wgnb a.ham::before{
+  content: "";
+  display : block;
+  height: 3px;
+  background-color: white; /**/
+  width: 100%; /* flex를 쓰면 내용만큼 영역이 줄어들기 때문에 width 를 지정해준다.*/
+  /*flex-grow : 1; 로 대체할 수 있따. */
+}
+header .inner h1 a {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+header .inner h1 a img{
+  display: block;
+  transform : translateY(-12px);
+  filter: brightness(100);
+}
+header .inner ul.gnb {
+}
+header .inner ul.gnb li {  
+}
+/* header .inner ul.gnb li h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+} */
+header .inner ul.gnb li h2 a {
+  
+}
+/* header .inner ul.gnb li ul.gnbsub {
+  
+}
+header .inner ul.gnb li ul.gnbsub li {
+  
+  line-height: 2;
+}
+header .inner ul.gnb li ul.gnbsub li a {
+  
+  font-size: 18px;
+  letter-spacing: 1.2px;
+} */
+header .inner ul.enb {
+  gap: 10px;
+  order: 3;
+}
+header .inner ul.enb li {
+  
+}
+header .inner ul.enb li a {
+  color: black;
+  font-weight: 600;
+}
+
+
+/* 클릭시 대메뉴 */
+.wrapgnb{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapgnb ul.gnb{
+  display: flex !important;
+  gap: 60px;
+}
+.wrapgnb ul.gnb >li{
+  
+}
+.wrapgnb ul.gnb >li h2{
+  font-size: 24px;
+  height: 24px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.wrapgnb ul.gnb > li h2 a{
+  display: block;
+  transform: translateY(100%);
+  transition: transform 1s;
+  transition-delay: 0.5s;
+}
+.wrapgnb ul.gnb >li ul li{
+  margin-bottom: 10px;
+  height: 16px;
+  overflow: hidden;
+}
+.wrapgnb ul.gnb >li ul li a{
+  display: block;
+  transform: translateY(100%);
+  transition: transform 1s;
+  transition-delay: 1s;
+}
+.translateY{
+  transform: translateY(0%) !important;
+}
+
+
+

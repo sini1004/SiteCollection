@@ -1,0 +1,456 @@
+#service {
+  padding-bottom: 200px;
+  box-sizing: border-box;
+}
+#service .inner {
+  width: 80%;
+  position: relative;
+}
+#service .inner hgroup h2.h5 {
+  font-size: 20px;
+  margin-bottom: 11px;
+  color: #aaa;
+}
+#service .inner .contents {
+  flex-wrap: wrap;
+  row-gap: 150px;
+  column-gap: 50px;
+  padding-bottom: 300px;
+}
+#service .inner .contents article {
+  width: calc(100% / 3 - 100px / 3);
+}
+#service .inner .contents article:nth-child(3n+1) {
+  transform: translateY(15%);
+}
+#service .inner .contents article:nth-child(3n+2) {
+  transform: translateY(40%);
+}
+#service .inner .contents article:nth-child(3n+3) {
+  transform: translateY(7%);
+}
+#service .inner .contents article a::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 595px;
+  background-position: center;
+  background-size: cover;
+  border: 0px solid rgba(99,106,82, 0.1);
+  transition: all 0.3s;
+  box-sizing: border-box;
+  background-origin: border-box;
+}
+#service .inner .contents article a:hover::before{
+  border: 40px solid rgba(99,106,82, 1);
+}
+#service .inner .contents article:nth-child(1) a::before{
+  background-image: url(../img/main-service-01.jpg);
+}
+#service .inner .contents article:nth-child(2) a::before{
+  background-image: url(../img/main-service-02.jpg);
+}
+#service .inner .contents article:nth-child(3) a::before{
+  background-image: url(../img/main-service-03.jpg);
+}
+#service .inner .contents article:nth-child(4) a::before{
+  background-image: url(../img/main-service-04.jpg);
+}
+#service .inner .contents article:nth-child(5) a::before{
+  background-image: url(../img/main-service-05.jpg);
+}
+#service .inner .contents article:nth-child(6) a::before{
+  background-image: url(../img/main-service-06.jpg);
+}
+#service .inner .contents article a h4 {
+  color: #111;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-top: 26px;
+}
+#service .inner .contents article a p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+#service .inner .contents a.more {  
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100px;
+  left: calc(50% - 50px);
+  padding-right: 40px;
+  font-weight: 600;
+}
+/* 
+#service .inner .contents a.more::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  border-top:2px solid;
+  top: calc(50% + 1px);
+  right: 0;
+}
+#service .inner .contents a.more::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2px solid;
+  border-bottom:transparent;
+  border-left: transparent;
+  transform: rotate(45deg);
+  top: calc(50% - 2px);
+  right: 0;
+} */
+
+
+/* space */
+#space {
+  position: relative;
+  padding: 250px 0 150px;
+  overflow: hidden;
+}
+#space .inner, #miele .inner {
+  width: 80%;
+  height: 650px;
+  margin-left: 0;
+  padding-left: 10%;
+}
+#space .inner {  
+  background-image: url(../img/main-space-01.jpg);
+}
+main #space .inner h2 {
+  left: 70%;
+  transform: translateX(0px);
+  transition: translate 1s;
+}
+#space .inner>*:not(h2){
+  color: white;
+}
+#space .inner h2 {
+  white-space: nowrap;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  font-size: 180px;
+  font-weight: bold;
+  letter-spacing: -2.3px;
+}
+#space .inner p, #miele .inner h2 {  
+  margin-top: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+#space .inner a.more {  
+  width: 100px;
+  font-weight: 600;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+a.more:hover span.pentagon {
+  width: 33px;
+  height: 38px;
+  display: block;
+  background-image: url(../img/path113.svg);
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  right: -12px;
+  top: calc(50% - 15px);
+  animation : rotation 3s infinite linear;
+  transform-origin: 51% 55%;
+  animation-direction: alternate;
+}
+@keyframes rotation  {
+    from {
+      opacity: 0;
+      transform: rotate(0deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(359deg);
+    }
+}
+
+
+/* brand story */
+#story .inner hgroup .h4 {
+  margin-top: 34px;
+  line-height: 1.5;
+}
+#story .inner ul.contents {
+  width: 90%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#story .inner ul.contents li {
+  flex-grow: 1;
+  width: calc(100% / 3);
+  text-align: center;
+}
+#story .inner ul.contents li:nth-child(2) {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#story .inner ul.contents li::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#story .inner ul.contents li:nth-child(1):before {
+  background-image: url(../img/story1.svg);
+}
+#story .inner ul.contents li:nth-child(2):before {
+  background-image: url(../img/story2.svg);
+}
+#story .inner ul.contents li:nth-child(3):before {
+  background-image: url(../img/story3.svg);
+}
+#story .inner ul.contents li h5 {
+  margin-top: 43px;
+  font-size: 24px;
+  color: #111;
+  font-weight: 600;
+}
+#story .inner ul.contents li p{
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+#story .inner a.more {  
+  width: 100px;
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+/* miele */
+#miele {
+  position: relative;
+  padding: 100px 0 0 0;
+}
+#miele .inner {
+  background-image: url(../img/main-miele-01.jpg);
+}
+#miele .inner > * {
+  color: white;
+}
+#miele .inner h2.h5, #contact inner h2.h5{
+  font-size: 20px;
+  margin-bottom: 14px;
+  opacity: 0.52;
+}
+#miele .inner p, #contact .inner p {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin-top: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#miele::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 120px;
+  position: absolute;
+  background-color: #767c69;
+  right: 0;
+  bottom: 0;  
+  z-index: -1;
+}
+
+/* contact */
+/* #contact {
+  position: relative;
+}
+#contact .inner {  
+  min-height: 850px;
+}
+#contact .inner::before {
+  content: "";
+  display: block;
+  width: 618px;
+  height: 711px;
+  background-image: url(../img/main-register-01.jpg);
+  position: absolute;
+  right: 15%;
+}
+#contact::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  background-color: #767c69;
+  right: 0;
+  bottom: 0;  
+  z-index: -1;
+}
+#contact .inner p {
+  color: #000;
+  line-height: 1.8;
+  color: #666;
+} */
+#contact{
+  padding: 100px 0;
+  position: relative;
+}
+#contact::after{
+  content: "";
+  width:30%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom:0;
+  background-color: #767c69;
+  z-index: -1;
+}
+#contact .inner{
+  position: relative;
+  /*! margin-left: 0; */
+  /*! padding-left: 10%; */
+  /*! height: 560px; */
+}
+#contact .inner::before{
+  content: "";
+  background-color: #ccc;
+  width: 600px;
+  height: 700px;
+  position: absolute;
+  right: 80px;
+  top: calc(50% - 350px);
+  background-image: url(../img/main-register-01.jpg);
+  background-size: cover;
+  background-position: center;
+  transform: scale(0.8);
+}
+#contact .inner h2,#contact .inner p,#contact .inner a{
+  color:#000;
+}
+/* instagram */
+#instagram {
+  background-color: #222;
+}
+#instagram .inner {  
+  width: 80%;
+}
+#instagram .inner h2 {
+  color: white;
+  margin-bottom: 42px;
+}
+#instagram .inner ul {  
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#instagram .inner ul li {
+ flex-basis: calc(100% / 4 - 90px / 4); 
+}
+#instagram .inner ul li a {
+  position: relative;
+  display: block;
+}
+#instagram .inner ul li a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  transition: all 0.7s;
+}
+#instagram .inner ul li a:hover::before {
+  opacity: 1;
+}
+
+#instagram .inner ul li a::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons8-instagram.svg);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: all 0.8s;  
+}
+#instagram .inner ul li a:hover:after {
+  opacity: 1;
+}
+
+#instagram .inner ul li a figure {
+  
+}
+#instagram .inner ul li a figure img {  
+  display: block;
+}
+#instagram .inner ul li a p {
+  width:100%;  
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  transition: all 0.6s;
+  font-weight: bold;
+  line-height: 1.3;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+#instagram .inner ul li a:hover p {
+  opacity: 1;
+  display: block;
+}
+
+
+main .ion-ios-analytics {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: top 0.5s;
+}
+.ion-ios-analytics::before {
+  content: "\f3ce";
+  font-size: 500px;
+  display: block;
+  color: #e3e3e3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

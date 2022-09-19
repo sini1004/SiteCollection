@@ -1,0 +1,462 @@
+/* 빙그레의 맛 */
+#taste {
+    
+}
+#taste .inner { 
+}
+#taste .inner h2.h2 {
+  margin: 80px 0;
+}
+#taste .inner ul.list {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 10px;
+  text-align: center;
+}
+#taste .inner ul.list li {    
+  width: calc((100% / 6) - (50px / 6)); /*((100% / 6)-(50px / 6));*/
+  border-radius: 30px;
+  box-sizing: border-box;
+  transform: translateY(20px);
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+}
+.tasteliup{
+  transform: translateY(0px) !important;
+  opacity: 1 !important;
+}
+#taste .inner ul.list li.delay:nth-child(1){
+  transition-delay: 0.2s;
+}
+#taste .inner ul.list li.delay:nth-child(2){
+  transition-delay: 0.3s;
+}
+#taste .inner ul.list li.delay:nth-child(3){
+  transition-delay: 0.4s;
+}
+#taste .inner ul.list li.delay:nth-child(4){
+  transition-delay: 0.5s;
+}
+#taste .inner ul.list li.delay:nth-child(5){
+  transition-delay: 0.6s;
+}
+#taste .inner ul.list li.delay:nth-child(6){
+  transition-delay: 0.7s;
+}
+#taste .inner ul.list li:hover{
+  transform: translateY(-20px) !important;
+}
+#taste .inner ul.list li::before{
+  content: ""; 
+  display: block;
+  width: 100%; 
+  height: 250px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#taste .inner ul.list li:nth-child(1)::before{
+  background-color: #efe4db;
+  background-image: url(../img/sec02_img01.png);
+}
+#taste .inner ul.list li:nth-child(2)::before{
+  background-color: #f6efe0;
+  background-image: url(../img/sec02_img02.png);
+}
+#taste .inner ul.list li:nth-child(3)::before{
+  background-color: #f9e5e5;
+  background-image: url(../img/sec02_img03.png);
+}
+#taste .inner ul.list li:nth-child(4)::before{
+  background-color: #ededed;
+  background-image: url(../img/sec02_img04.png);
+}
+#taste .inner ul.list li:nth-child(5)::before{
+  background-color: #e4f3f9;
+  background-image: url(../img/sec02_img05.png);
+}
+#taste .inner ul.list li:nth-child(6)::before{
+  background-color: #fcf4e5;
+  background-image: url(../img/sec02_img06.png);
+}
+#taste .inner ul.list li a {
+  width: 100%;
+  display: block;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 2.8;
+  position: relative;
+}
+#taste .inner ul.list li a::before{
+  content: "VIEW MORE";
+  display: none;
+  background:#e0462e;
+  color: white;
+  position: absolute;
+  width: 100%;
+  border-radius: 18px;
+}
+#taste .inner ul.list li:hover a::before{
+  display: block;
+}
+
+/* brandshop */
+#shop {
+  
+}
+/* #shop::before{
+  content:"BRAND";
+  font-size:100px;
+  opacity:0.1;
+  position:absolute;
+  transform-origin:0 100%;
+  transform: rotate(90deg) translateX(80px);
+} */
+#shop .inner {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#shop .inner h2.h2 {  
+  margin-bottom: 80px;
+}
+#shop .inner ul.list {  
+  width: 90%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#shop .inner ul.list li {
+  border: 1px solid #edecef;
+  border-radius: 30px;
+  width: calc((100% / 6) - (50px / 6));
+  height: 260px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(15px);
+  transition: all 1s ease-in-out;
+}
+#shop .inner ul.list li:nth-child(1){
+  transition-delay: 0.2s;
+}
+#shop .inner ul.list li:nth-child(2){
+  transition-delay: 0.3s;
+}
+#shop .inner ul.list li:nth-child(3){
+  transition-delay: 0.4s;
+}
+#shop .inner ul.list li:nth-child(4){
+  transition-delay: 0.5s;
+}
+#shop .inner ul.list li:nth-child(5){
+  transition-delay: 0.6s;
+}
+#shop .inner ul.list li:nth-child(6){
+  transition-delay: 0.7s;
+}
+#shop .inner ul.list li:hover {
+  transform: translateY(-15px) !important;
+}
+
+#shop .inner ul.list li:hover>*{
+  display: block;
+}
+#shop .inner ul.list li>*:not(h3){
+  display: none;
+}
+#shop .inner ul.list li:hover>*:not(a){
+  animation-name: fadeUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeUp{
+  from{
+    transform: translateY(40px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+#shop .inner ul.list li:hover a{
+  animation-name: shopFadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes shopFadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#shop .inner ul.list li:hover img{
+  transform: scale(0.8);
+}
+
+#shop .inner ul.list li h3 {  
+  font-size: 0;
+}
+#shop .inner ul.list li h3 img {  
+  transition: all 0.5s;
+}
+#shop .inner ul.list li h3 br {
+  
+}
+#shop .inner ul.list li p {  
+  line-height: 1.6;
+}
+#shop .inner ul.list li p:before{
+  content: "";
+  display: block;
+  width: 20px;
+/*   height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 18px auto; */
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin:0 auto;
+  margin-bottom: 15px;
+}
+#shop .inner ul.list li a {  
+  width: 90%;
+  line-height: 2.3;
+  border-radius: 20px;
+  background: #e0462e;
+  color: #fff;
+}
+
+/* 커뮤니티 */
+#community {
+  
+}
+#community .inner {  
+  gap: 50px;
+}
+#community .inner h2 {
+  
+}
+#community .inner > *{
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+#community .inner > article {  
+  width: 40%;
+  height: 280px;  
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-origin: content-box;
+  align-items: flex-start;
+}
+#community .inner > article.cyber {  
+  background-color: #fcf5e5;
+  background-image: url(../img/sec04_backimg03.png);
+}
+#community .inner > article.sinmungo {  
+  background-color: #f9f9f9;
+  background-image: url(../img/sec04_backimg04.png);
+}
+#community .inner > article h3 {
+  
+}
+#community .inner > article p {  
+}
+#community .inner > article > a {  
+}
+#community .inner div {
+  width: calc(80% + 50px);
+  box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+  gap:50px;
+}
+#community .inner div article { 
+/*   height: 320px;  */
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-origin: content-box;
+}
+#community .inner div article:not(.faq) {  
+  width: calc((100% / 2) - (50px / 2));
+}
+#community .inner div article:nth-child(1) h3{
+  margin-bottom: 30px;
+}
+#community .inner div article.faq {
+  width: 100%;
+  position: relative;
+}
+#community .inner div article.email {  
+  background-color: #eef8fb;
+  background-image: url(../img/sec04_backimg01.png);
+}
+#community .inner div article.email > a {
+  display: block;
+  width: 150px;
+  line-height: 2.7;
+  background: #e0462e;
+  color: #FFF;
+  border-radius: 23px;
+  text-align: center;
+}
+#community .inner div article.telphone {  
+  background-color: #fdf3f2;  
+  background-image: url(../img/sec04_backimg02.png);
+}
+#community .inner div article.telphone h3{  
+}
+#community .inner div article.telphone > a {
+  font-size: 46px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -2.33px;
+  color: #303030;
+  padding-top:30px;
+  margin-bottom:25px;
+  display: block;
+}
+#community .inner div article.telphone > p {
+}
+#community .inner div article.telphone span{
+  color: #e0462e;
+  margin-left: 10px;
+  font-weight: 500;
+}
+#community .inner div article ul {
+  gap: 50px;
+  row-gap: 10px;
+}
+#community .inner div article ul li {  
+  width: calc(100% / 2 - 50px / 2);
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+  box-sizing: border-box;
+  line-height: 4;
+}
+#community .inner div article ul li a {  
+  font-size: 18px;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+#community .inner div article ul li a::after{
+  content: "↗";
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-color: #e0462e;
+  box-shadow: inset 0px 5px 10px 0 rgba(26, 26, 26, 0.14);
+  float: right;
+  border-radius:50%;
+  text-align: center;
+  line-height: 42px;
+  color: white;
+  transition: all 0.7s;
+  transform: scale(0);
+}
+#community .inner div article ul li:hover a::after{
+  transform: scale(1);
+}
+#community .inner div article p {
+}
+#community .inner div article > a.viewMore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px rgba(224, 223, 226, 0.6);
+  padding: 13px 55px;
+  border-radius: 25px;
+  font-size:14px;
+  transition: all 0.2s;
+}
+#community .inner div article > a.viewMore:hover{
+  background-color: #e0462e;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* 사이드 메뉴 */
+aside#quick{
+  position: fixed;
+  bottom: 150px;
+  right: 30px;
+}
+aside#quick span{
+
+}
+aside#quick a.shop{
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #1b1b1b;
+  box-shadow: 0px 3px 8px 1px rgba(0, 0, 0, 0.06), inset 0px 5px 10px 0 rgba(255, 255, 255, 0.14);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+}
+aside#quick a.top{
+  display: flex;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0;
+  margin-top:15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+aside#quick a.top::before{
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border:2px solid #fff;
+  border-left: transparent;
+  border-bottom: transparent;
+  transform: translateY(50%) rotate(-45deg);
+  transition: all 0.5s;
+}
+aside#quick a.top::after{
+  content: "";
+  display: block;
+  border: 1px solid #FFF;
+  height: 18px;
+  transform: translateY(-30%);
+}
+/* aside#quick a.top:hover::before{
+  transform: translateY(55%) rotate(-45deg);
+}
+aside#quick a.top:hover::after{
+  transform: translateY(-30%);
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+

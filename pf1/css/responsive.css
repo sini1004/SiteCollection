@@ -1,0 +1,323 @@
+@media screen and (max-width:1200px){
+    .innerPadding {
+      padding-bottom: 50px;
+    }
+    header{
+      position: absolute;
+    }
+    header .inner{
+      flex-wrap: wrap;
+    }
+    header .inner h1{
+      order: 1;
+    }
+    header .inner ul.gnb{
+      width: 100%;
+      order: 3;
+      gap: 0;
+      justify-content: center;
+    }
+    header .inner ul.gnb:hover::before {
+    height: 700px;
+    }
+    header .inner ul.gnb:hover::after{
+      content: "";
+      border: none;
+    }
+    header .inner ul.enb{
+      order: 2;
+    }
+    
+    /* 타이틀 */
+    #title{
+      min-height: 52.08333333333333vh;
+    }
+    #title::before{
+      width: 78.54166666666667vw;
+      height: 20.20833333333333vw;
+      /*! margin-top: -300px; */
+      /*! background-position: center; */
+    }
+    #title form.search{
+      width: 53.125vw;
+      min-width: 700px;
+    }
+    #title form.search input{
+  /*     width: 90.063vw; */
+    }
+    #title ul.hash{
+    column-gap: 10px;
+    }
+    #title ul.hash li{
+      padding: 0 10px;
+    }
+    #title ul.hash li a{
+      font-size: 12px;
+    }
+    #title span{
+      bottom: 300px;
+    }
+    
+    /* 빙그레맛 */
+    #taste .inner{
+      margin-top: 0;
+    }
+    #taste .inner ul.list{
+      width: 90%;
+    }
+    #taste .inner ul.list li{
+      width: calc((100% / 3) - (30px / 3));
+    }
+    #taste .inner ul.list li:nth-child(3)::before{
+      background-position: center;
+    }
+    #taste .inner ul.list li:nth-child(4)::before{
+      background-position: center;
+    }
+    
+    /* 브랜드샵 */
+    #shop div.inner ul.list{
+      width: 90%;
+      row-gap: 10px;
+    }
+  #shop .inner ul.list li p{
+    font-size:14px;
+    }
+    #shop::before{
+      display: none;
+    }
+    #shop div.inner ul{
+      flex-wrap: wrap;
+    }
+    #shop div.inner ul.list li{
+      width: calc((100% / 3) - (20px / 3));
+    }
+    
+    /* 커뮤니티 */
+   #community .inner > article{
+      width: 90%;
+      height: 200px;
+      padding: 25px;
+    }
+    #community .inner div article ul li{
+      width: calc(100% );
+      line-height: 1.5;
+       padding: 10px 0;  
+    }
+    #community .inner div article:not(.faq){
+      width: calc(100%);
+      padding: 30px;
+    }
+    #community .inner{
+      width: 100%;
+    }
+    #community .inner div {
+      padding: 10px;
+    }
+    #community .inner > div{
+      box-shadow: 0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09);
+    }
+    #community .inner article.report, #community .inner article.safety{
+      width: 70%;
+      background-size: 120px;
+    }
+    #community .inner article.safety{
+      margin-top: -30px;
+    }
+    #community .inner article.qna{
+      padding: 30px;
+      width: 90%;
+      position: relative;
+    }
+    #community .inner article.qna > a.view{
+      width: 30%;
+    }
+    #community .inner article.qna ul li{
+      width: 100%;
+    }
+    #community .inner article.qna ul li:hover a::after{
+      display: none;
+    }
+    #community .inner article.qna ul li:nth-child(even) {
+      margin-left: 0;
+    }
+    #community .inner article.qna ul li a{
+      width: 100%;
+      font-size: 14px;
+    }
+    #community .inner div.enc{
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    #community .inner div.enc article{
+      height: 180px;
+      width: 70%;
+      background-size: 120px;
+    }
+    #community .inner article.email{
+      margin-top: 10px;
+    }
+    #community .inner article.call{
+      margin-top: -30px;
+    }
+    #community .inner article.call > a.tel{
+      margin: 0;
+    }
+    #community .inner article div.textbox{
+      bottom: 0;
+    }
+  }
+  
+  @media screen and (max-width:768px){ /* max-width 이하, 미디어쿼리(@media) */
+    .h2 {
+      font-size: 28px;
+    }
+    .h3 {
+      font-size:24px;
+    }
+    header{ /* 너비값이 768px 이하일 때만 나타난다는 의미 */
+      position: absolute;
+    }
+    header .inner ul.gnb{
+      display: none;
+    }
+    header .inner ul.tnb{
+      display: none;
+    }
+  
+    /*  타이틀  */
+    #title{
+      min-height: 52.08333333333333vh;
+    }
+    
+    #title::before{
+      width: 78.54166666666667vw;
+      height: 20.20833333333333vw;
+      margin-top: -6.25vw;
+    }
+    #title form.search{
+      width: 53.125vw;
+      min-width: 90%;
+    }
+    #title form.search input{
+      width: 100%;
+    }
+    #title form.search button {
+      width: 120px;
+    }
+    #title ul.hash{
+    column-gap: 5px;
+    }
+    #title ul.hash li{
+      padding: 0 10px;
+    }
+    #title ul.hash li a{
+      font-size: 11px;
+    }
+    #title span{
+      bottom: 5%;
+    }
+    
+    /* 빙그레맛 */
+    #taste .inner{
+      margin-top: 50px;
+    }
+    #taste .inner ul.list li{
+      width: calc((100% / 2) - (15px / 2));
+    }
+    #taste .inner ul.list li:nth-child(3)::before{
+      background-position: center;
+    }
+    #taste .inner ul.list li:nth-child(4)::before{
+      background-position: center;
+    }    
+    
+    /* 브랜드샵 */
+    #shop .inner ul.list li {    
+        width: calc((100% / 3) - (20px / 3));
+        height: 140px;
+    }
+    #shop .inner ul.list {
+        row-gap: 20px;
+    }
+    #shop .inner ul.list li h3 img {
+        width: 80%;
+    }
+    
+    /* 커뮤니티 */
+    #community .inner {
+      gap: 10px;
+    }
+    #community .inner div{
+      width: calc(100% - 30px);
+      gap: initial;
+      box-shadow: 0 0 0 transparent;
+      row-gap: 30px;
+    }
+    #community .inner div article {
+      height: auto;
+    }
+    #community .inner div article ul li {    
+      width: 100%;
+      padding: 10px 0;
+      line-height: 1.5;
+    }
+    #community .inner div article ul li a {
+      font-size: 14px;
+    }
+    #community .inner div article > a.viewMore {    
+      padding: 10px 30px;
+    }
+    #community .inner div article:not(.faq) {    
+      width: 100%;
+      /*! padding: 30px; */
+    }
+    #community .inner div article.email {
+      
+    }
+    /* 퀵 */
+    aside#quick {
+      bottom: 30px;
+    }
+    
+    /* footer */
+    footer .inner{
+      display: block;
+      height: auto;
+      padding: 30px;
+    }
+    footer .inner .left address{
+      transform: translateY(5px);
+      line-height: 1.3;
+    }
+    footer .inner .left p.copyright {
+      margin-top: 20px;
+    }
+    footer .inner .right{
+      align-items: flex-start;
+      width: 100%;
+    }
+    footer .inner .right ul.personal{
+      margin-top: 20px;
+    }
+    footer .inner .right .bottom{
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    footer .inner .right .bottom ul.sns{
+      width: 80%;
+    }
+    footer .inner .right .bottom ul.sns li {
+      width: 50px;
+      height: 50px;    
+    }
+    footer .inner .right .bottom > a{      
+      width: 280px;  
+      margin-left: 0;  
+      margin-top: 10px;
+    }    
+    footer .inner .right .bottom > a.softlab{
+      margin-top: -35px;  
+    }
+  }

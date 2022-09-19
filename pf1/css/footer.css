@@ -1,0 +1,115 @@
+footer {
+  width: 100%;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+footer .inner {
+  height: 380px;
+  box-sizing: border-box;
+}
+footer .inner .left {
+}
+footer .inner > div {
+}
+footer .inner .left h1 {
+}
+footer .inner .left h1 a {
+  background-image: url(../img/f_logo.png);
+  width: 113px;
+  height: 30px;
+  display: block;
+  font-size: 0;
+}
+footer .inner .left address {
+  line-height: 2;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-50px);
+  letter-spacing: -0.8px;
+}
+footer .inner .left p.copyright {
+  font-size: 14px;
+  letter-spacing: -0.15px;
+  color: rgba(255, 255, 255, 0.2);
+}
+footer .inner .right {
+  align-items: flex-end;
+}
+footer .inner .right ul.personal {
+  gap: 20px;
+}
+footer .inner .right ul.personal li {  
+}
+footer .inner .right ul.personal li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+footer .inner .right .bottom {
+}
+footer .inner .right .bottom > a {
+  width: 340px;
+  height: 70px;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
+  border-radius: 35px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(153, 153, 153, 0.67);
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+footer .inner .right .bottom > a strong {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.67);
+}
+footer .inner .right .bottom ul.sns {
+  gap: 15px;
+  align-items: center;
+}
+footer .inner .right .bottom ul.sns li {
+  width: 70px;
+  height: 70px;
+  background-color: #1b1b1b;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
+  border-radius: 50%;
+  font-size: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+footer .inner .right .bottom ul.sns li:before{
+}
+footer .inner .right .bottom ul.sns li a {
+  width: 19px;
+  height: 19px; 
+  display: block; 
+  font-size: 0;
+  background-image: url(../img/logo-instagram.svg);
+}
+footer .inner .right .bottom ul.sns li:nth-child(2) a {
+  background-image: url(../img/logo-youtube.svg);
+}
+footer .inner .right .bottom ul.sns li:nth-child(3) a {
+  background-image: url(../img/logo-twitter.svg);
+}
+footer .inner .right .bottom > a::before{
+  content: "";
+  background-image: url(../img/flag_store.png);
+  width: 64px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+
+
+
+
+
+

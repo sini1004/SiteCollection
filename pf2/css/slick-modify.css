@@ -1,0 +1,60 @@
+.slick-prev, .slick-next {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fefdfd;
+    transform: rotate(45deg);
+    z-index: 2;
+    bottom: 70px;
+    top: initial;
+}
+.slick-prev {
+    right: 130px;
+    border-top: transparent;
+    border-right: transparent;
+    left: initial;
+}
+/* .slick-prev:hover::before{
+    content: "PREV";
+    display: block;
+    font-size: 14px;
+    transform: rotate(-45deg);
+    color: white;
+} */
+.slick-next {
+    right: 75px;
+    border-bottom: transparent;
+    border-left: transparent;
+}
+.slick-prev::before, .slick-next::before {
+    color: #333;
+    font-size: 30px;
+    content: "";
+}
+/* .slick-prev::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(-45deg);
+    top: -40px;
+    
+} */
+.slick-prev::before {
+    
+}
+.slick-next::before {
+    
+}
+.slick-dots{
+    bottom: 36px;
+}
+.slick-dots li button::before{
+    font-size: 17px;
+    transition: transform 0.5s,color 0.5s,opacity 0.5s;
+}
+.slick-dots li.slick-active button::before {
+  opacity: .75;
+  color: red;
+  transform: scale(1.4);  
+}
