@@ -1,0 +1,242 @@
+@media screen and (max-width:1200px){
+    .inner {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    
+    /* header */
+    #header nav {
+        display: none;
+    }
+    #header .hamburger-button {
+        display: block;
+    }
+
+    /* title */
+    #title {
+        max-height: 800px;
+    }
+    
+    /* service */
+    #service .service_inner h3 {
+        font-size: 34px;
+    }
+    #service {
+        margin: 100px 0;
+    }
+
+    /* about */
+    #about .about_inner h3 {
+        font-size: 38px;
+    }
+    #about .about_inner div h4 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    #about .about_inner div a {
+        margin-top: 50px;
+    }
+
+    /* dosirak */    
+    #dosirak .dosirak_inner ul li h6 {
+        font-size: 24px;
+    }
+    #dosirak .dosirak_inner ul li a.dosirak_link {
+        padding: 50px;
+        min-height: 400px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    /* title */
+    #title {
+        max-height: 700px;
+    }
+    #title .title_inner h2 {
+        font-size: 50px;
+    }
+
+    /* service */
+    #service .service_inner h3 {
+        font-size: 30px;
+    }
+    #service .service_inner .service_w {
+        display: initial;
+    }
+    #service .service_inner .service_w article {
+        padding: 20px;
+        justify-content: center;
+    }
+    #service .service_inner .service_w article h4 {
+        font-size: 20px;
+    }
+    #service .service_inner .service_w article p {
+        font-size: 16px;
+    }
+    #service .service_inner .service_w .service_l {
+        width: 100%;
+    }
+    #service .service_inner .service_w .service_l article {
+        min-height: 280px;
+        background-repeat: no-repeat;
+        background-position: 10% -150px;
+    }
+    #service .service_inner .service_w .service_r {
+        width: 100%;
+        margin-left: 0;
+    }
+    #service .service_inner .service_w .service_r article:nth-child(1) {
+        margin: 10px 0;
+        min-height: 280px;
+    }
+    #service .service_inner .service_w .service_r article:nth-child(2) {
+        min-height: 280px;
+    }
+
+    /* about */
+    #about .about_inner {
+        display: initial;
+        text-align: center;
+    }
+    #about .about_inner h3 {
+        width: 100%;
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    #about .about_inner div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* dosirak */
+    #dosirak .dosirak_inner ul li a.dosirak_link::before{
+        max-width: 260px;
+    }
+
+    /* footer */
+    footer .footer_inner ul {
+        align-items: center;
+        row-gap: 10px;
+    }
+    footer .footer_inner p {
+        text-align: center;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width:460px){
+    #header .logo {
+        width: 109px;
+        height: 30px;
+    }
+    #header .logoc {
+        width: 109px;
+        height: 30px;
+    }
+    #header nav {
+        display: none;
+    }
+
+    /* title */
+    #title {
+        min-height: 600px;
+    }
+    #title .title_inner h2 {
+        font-size: 36px;
+    }
+    #title .title_inner p {
+        font-size: 17px;
+    }
+    #title .title_inner a {
+        width: 180px;
+        height: 55px;
+    }
+
+    /* service */
+    #service {
+        margin: 70px 0;
+    }
+    #service .service_inner h3 {
+        font-size: 24px;
+    }
+    #service .service_inner .service_w article {
+        padding: 20px;
+        justify-content: center;
+        background-size: auto;
+        min-height: 230px !important;
+    }
+    #service .service_inner .service_w .service_l {
+        width: 100%;
+    }
+    #service .service_inner .service_w .service_r {
+        width: 100%;
+        margin-left: 0;
+    }
+    #service .service_inner .service_w .service_l article {
+        min-height: 230px !important; 
+        background-repeat: no-repeat;
+        background-position: 10% -360px;
+    }
+    #service .service_inner .service_w .service_r article:nth-child(1) {
+        margin: 10px 0;
+        min-height: 230px;
+    }
+    #service .service_inner .service_w .service_r article:nth-child(2) {
+        min-height: 230px;
+    }
+
+    /* about */
+    #about {
+        padding-bottom: 70px;
+    }
+    #about .about_inner h3 {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+    #about .about_inner div h4 {
+        font-size: 20px;
+    }
+    #about .about_inner div p {
+        font-size: 16px;
+    }
+    #about .about_inner div a {
+        width: 120px;
+        margin-top: 30px;
+    }
+
+    /* dosirak */
+    #dosirak .dosirak_inner ul {
+        display: initial;
+    }
+    #dosirak .dosirak_inner ul li {
+        width: 100%;
+    }
+    #dosirak .dosirak_inner ul li a.dosirak_link {
+        padding: 30px;
+        min-height: 260px;
+    }
+
+    /* footer */
+    footer .footer_inner ul {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    footer .footer_inner ul li {
+        border: 0;
+    }
+    footer .top {
+        right: 20px;
+    }
+    .footerbr {
+        display: block;
+    }
+}
