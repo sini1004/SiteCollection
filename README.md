@@ -20,3 +20,4 @@ grid system을 이용한 사이트 연습
 반응형, jQuery를 이용한 사이트 연습
 
 ## spf2. Kano 사이트
+반응형, jQuery를 이용한 사이트 연습

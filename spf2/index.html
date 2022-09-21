@@ -8,28 +8,48 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  
-  <header>
-    <h1><a href="#"><img src="img/logo.png" alt=""></a></h1>
-    <nav id = "gnb">
-      <ul>
-        <li><a href="#">KANO</a></li>
-        <li><a href="#">BUSINESS</a></li>
-        <li><a href="#">BRAND</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
-    <div class="header-util">
-      <button></button>
-      <button class="sitemap"></button>
-    </div>
-  </header>
 
-  <div id="mainContainer">
-    <section>
+<!-- /////////header///////// -->
+  <div id="header_wrap">
+    <header>
+      <h1 class="logo"><a href="#"><img src="img/logo.png" alt=""></a></h1>
+      <nav class="menu_container">
+        <ul id="menu">
+          <li><a href="#">KANO</a></li>
+          <li><a href="#">BUSINESS</a></li>
+          <li><a href="#">BRAND</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="search_container">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+      <div class="resevation_container">
+        <a href="#">RESERVATION</a>
+      </div>
+      <div class="header-util">
+        <button></button>
+        <button class="sitemap"></button>
+      </div>
+      <a href="#" class="m_menuBtn">
+        <span class="m_menuBtn_line1"></span>
+        <span class="m_menuBtn_line2"></span>
+      </a>
+    </header>
+  </div>
+
+<!-- /////////main///////// -->
+<main>
+  <div class="mainFull">
+    <section class="mainVisual">
       <!-- 비디오 -->
+      <video playsinline autoplay muted poster loop ="media/main-visual-vid-poster-01-v2.jpg">
+        <source src="media/main-bg.mp4" type="video/mp4">
+        이 브라우저에서는 동영상 기능을 지원하지 않습니다.
+      </video>
     </section>
+
     <section class="kanoBusines">
       <h2>카노는 무슨 일을 할까?</h2>
       <ul>
@@ -176,7 +196,10 @@
       </div>
     </section>
   </div>
+</main>
 
+
+<!-- /////////footer///////// -->
   <footer>
     <section class="footer-wrap">
       <div class="footer-left">

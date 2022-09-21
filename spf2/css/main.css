@@ -3,7 +3,61 @@
 @import "reset.css";
 
 /* header */
+#header_wrap {
+  position: fixed;
+  top: 0;
+  left :0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 999;
+}
+#header_wrap header {
+  position: relative;
+  margin: 0 5vw;
+}
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  transition:all 300ms;
+}
+.logo a {
+  display: block;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.2;
+}
 
+.menu_container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+#menu { 
+  display:inline-block;
+}
+#menu > li {
+  display:inline-block;
+}
+#menu > li > a {
+  display:block;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* mainVisual */
+.mainFull{}
+
+.mainVisual { 
+  position: relative;
+  width:100%; 
+  height:100vh;
+}
+.mainVisual video {
+  width:100%; 
+  height:100%;
+  object-fit: cover;
+}
 
 /* kanoBusines */
 
