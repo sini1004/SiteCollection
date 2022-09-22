@@ -10,6 +10,11 @@
   width: 100%;
   background-color: transparent;
   z-index: 999;
+  color: #fff;
+}
+#header_wrap.scroll {
+  background:#fff;
+  color:#000;
 }
 #header_wrap header {
   position: relative;
@@ -23,7 +28,7 @@
 }
 .logo a {
   display: block;
-  color: #fff;
+  color: inherit;
   font-weight: normal;
   line-height: 1.2;
 }
@@ -32,6 +37,10 @@
   width: 100%;
   text-align: center;
   padding: 50px 0;
+  transition: all .5s;
+}
+.menu_container.menu_height {
+  padding: 30px 0;
 }
 #menu { 
   display:inline-block;
@@ -42,7 +51,7 @@
 #menu > li > a {
   display:block;
   padding: 10px 20px;
-  color: #fff;
+  color: inherit;
 }
 .lang_container {
   position:absolute;
@@ -52,7 +61,7 @@
 .lang_container button {
   background: transparent;
   border: none;
-  color: #fff;
+  color: inherit;
 }
 .sitemap_container {
   position:absolute;
