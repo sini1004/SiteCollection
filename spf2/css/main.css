@@ -2,6 +2,21 @@
 
 @import "reset.css";
 
+/* common */
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.br {
+  display: block;
+}
+.kano-main-txt {
+  color: #000;
+  font-size: 54px;
+  font-weight: 100;
+  line-height: 1.2962em;
+  letter-spacing: -0.046296em;
+}
 /* header */
 #header_wrap {
   position: fixed;
@@ -91,23 +106,99 @@
 }
 
 /* kanoBusines */
-
+.kanoBusines {
+  background: url('../img/main_business_bg.jpg') no-repeat right / cover;
+  padding: 175px 0 142px;
+}
+.busines-wrap {
+  margin-top: 47px;
+}
+.busines-list {
+  display: flex;
+}
+.busines-list li {
+  width: 25%;
+}
+.busines-list li a {
+  position: relative;
+  display: block;
+  padding: 70px 20px 70px 44px;
+  transform: translate(0,0);
+  transition: transform 0.4s;
+  border-radius: 20px;
+}
+.busines-list li a:hover {
+  left: 0;
+  top: 0;
+  background-color: #bf1e2e;
+  color: #fff;
+  border-radius: 20px;
+  transition: all .3s;
+  box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+}
+/* .busines-list li a:hover::before {
+  opacity: 1;
+} */
+.list-box {
+  
+} 
+.list-box span {
+  
+}
+.list-box h3 {
+  display: block;
+  font-size: 25px;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+  color: #000;
+  font-weight: 300;
+  margin-top: 40px;
+  transition: all 0.4s;
+}
+.list-box p {
+  font-size: 18px;
+  letter-spacing: -0.03611em;
+  line-height: 1.55;
+  color: #939393;
+  font-weight: 300;
+  margin-top: 40px;
+  transition: all 0.4s;
+}
+.list-box .more {
+  display: block;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #000;
+  font-weight: 700;
+  margin-top: 48px;
+  transition: all 0.4s;
+}
 /* kanoBrand */
 
 /* kanoHistory */
+.kanoHistory {
+  padding-top: 170px;
+}
+
 
 /* kanoNews */
-
+.kanoNews {
+  padding-top: 220px;
+}
 /* kanoInquiry */
-
+.kanoInquiry {
+  padding: 150px 0 115px;
+}
 /* footer */
 footer {
   border-top: 1px solid #ddd;
   padding: 80px 0;
 }
 .footer-wrap {
-  max-width: 1300px;
-  margin: 0 auto;
+}
+.footer-left {
+  float: left;
+  width: calc(100% - 650px);
 }
 .footer-sns ul{
   display: flex;
@@ -115,3 +206,36 @@ footer {
 .footer-sns ul li {
   flex: 1;
 }
+.footer-sns > li a {
+  display: block;
+  font-size: 26px;
+  color: #000;
+}
+.footer-address-txt {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.86;
+  font-family: 'Noto Sans KR';
+}
+.footer-address-txt p {
+  display: inline-block;    
+  vertical-align: middle;
+  position: relative;
+  margin: 0 7px;
+}
+.footer-address-txt a {
+  color: inherit;
+}
+.footder-copyright {
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  color: #000;
+  font-weight: 400;
+}
+
+.footer-right {
+  float: right;
+  width: 650px;
+}
+
+

@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KANO</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <script src="https://kit.fontawesome.com/eaeb383721.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -50,53 +53,67 @@
     </section>
 
     <section class="kanoBusines">
-      <h2>카노는 무슨 일을 할까?</h2>
-      <ul>
-        <li>
-          <a href="">
-            <div>
-              <span class="icon"></span>
-              <h3>제품기획·마케팅</h3>
-              <p>노하우를 통한 제품기획과 마케팅으로 원하는 생각을 구현</p>
-              <span class="more">More View</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <span class="icon"></span>
-              <h3>제품개발·제조</h3>
-              <p>210평의 제조설비를 운영하며 1,000평 물류센터를 보유</p>
-              <span class="more">More View</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <span class="icon"></span>
-              <h3>로컬 비즈니스 네트워크</h3>
-              <p>메이저급 판매 인프라를 구축하며 고객 맞춤 솔루션을 제공</p>
-              <span class="more">More View</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <span class="icon"></span>
-              <h3>글로벌 비즈니스 네트워크</h3>
-              <p>전세계 시장을 나아갈 모든것을 갖춘 성장하는 기업 카노</p>
-              <span class="more">More View</span>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <div class="inner">
+        <h2 class="kano-main-txt">카노는 무슨 일을 할까?</h2>
+        <div class="busines-wrap">
+          <ul class="busines-list">
+            <li data-scroll="fade-up">
+              <a href="#">
+                <div class="list-box">
+                  <span class="icon">
+                    <img src="img/main_business_icon_01.png" alt="제품기획·마케팅" class="pc">
+                  </span>
+                  <h3>제품기획·마케팅</h3>
+                  <p>노하우를 통한<span class="br"></span>제품기획과 마케팅으로<span class="br"></span>원하는 생각을 구현</p>
+                  <span class="more">More View</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="list-box">
+                  <span class="icon">                            
+                    <img src="img/main_business_icon_01.png" alt="제품기획·마케팅" class="pc">
+                    <!-- <img src="img/m_block3_01.png" alt="타이어테크 매장찾기" class="mobile"> -->
+                  </span>
+                  <h3>제품개발·제조</h3>
+                  <p>210평의 제조설비를<span class="br"></span>운영하며 1,000평<span class="br"></span>물류센터를 보유</p>
+                  <span class="more">More View</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="list-box">
+                  <span class="icon">
+                    <img src="img/main_business_icon_01.png" alt="제품기획·마케팅" class="pc">
+                  </span>
+                  <h3>로컬 비즈니스 네트워크</h3>
+                  <p>메이저급 판매 인프라를<span class="br"></span>구축하며 고객 맞춤<span class="br"></span>솔루션을 제공</p>
+                  <span class="more">More View</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="list-box">
+                  <span class="icon">
+                    <img src="img/main_business_icon_01.png" alt="제품기획·마케팅" class="pc">
+                  </span>
+                  <h3>글로벌 비즈니스 네트워크</h3>
+                  <p>전세계 시장을<span class="br"></span>나아갈 모든것을 갖춘<span class="br"></span>성장하는 기업 카노</p>
+                  <span class="more">More View</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </section>
     <!-- brand -->
     <section class="kanoBrand">
-      <h2>카노와 함께하는 브랜드를 소개합니다.</h2>
+      <h2 class="kano-main-txt">카노와 함께하는<span class="br"></span>브랜드를 소개합니다.</h2>
       <div class="brandimg-wrap">
         <div class="brandimg">
           <img src="img/main_brand_img_easystory.jpg" alt="">
@@ -147,40 +164,45 @@
     </section>
     <!-- history -->
     <section class="kanoHistory">
-      <h2>끊임없는 발전을 이끌어 온 카노 역사현장</h2>
+      <div class="inner">
+        <h2 class="kano-main-txt">끊임없는 발전을 이끌어 온<span class="br"></span>카노 역사현장</h2>  
+
+      </div>
     </section>
     <section class="kanoNews">
-      <h2>카노의 더 많은 소식들을 들어보세요.
-        다양한 즐거움을 여러분들에게 드립니다.</h2>
-      <ul>
-        <li>
-          <a href="">
-            <div>
-              <img src="" alt="">
-              <strong>㈜카노, 기업과의 파트너십 체결로 국내외 유통판로 확대 위한 교두보 역할 주력</strong>
-              <span>2022-05-04</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="" alt="">
-              <strong>카노 인터내셔널 마쿠아케 펀딩 사업으로 글로벌 기업으로 도약.</strong>
-              <span>2022-03-22</span>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="" alt="">
-              <strong>카노인터내셔날, 덩치 큰 이불 날씬하게 보관</strong>
-              <span>2022-02-11</span>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <div class="inner">
+        <h2 class="kano-main-txt">카노의 더 많은 소식들을 들어보세요.<span class="br"></span>
+          다양한 즐거움을 여러분들에게 드립니다.</h2>
+        <ul>
+          <li>
+            <a href="">
+              <div>
+                <img src="" alt="">
+                <strong>㈜카노, 기업과의 파트너십 체결로 국내외 유통판로 확대 위한 교두보 역할 주력</strong>
+                <span>2022-05-04</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="" alt="">
+                <strong>카노 인터내셔널 마쿠아케 펀딩 사업으로 글로벌 기업으로 도약.</strong>
+                <span>2022-03-22</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div>
+                <img src="" alt="">
+                <strong>카노인터내셔날, 덩치 큰 이불 날씬하게 보관</strong>
+                <span>2022-02-11</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="kanoInquiry">
       <div class="inquiry-wrap">
@@ -200,13 +222,13 @@
 
 <!-- /////////footer///////// -->
   <footer>
-    <section class="footer-wrap">
+    <section class="footer-wrap inner">
       <div class="footer-left">
         <div class="footer-sns">
           <ul>
-            <li><a href="#">인스타</a></li>
-            <li><a href="#">페이스북</a></li>
-            <li><a href="#">유튜브</a></li>
+            <li><a href="#"><i class="xi-instagram"></i></a></li>
+            <li><a href="#"><i class="xi-facebook"></i></a></li>
+            <li><a href="#"><i class="xi-youtube-play"></i></a></li>
           </ul>
         </div>
         <div class="footer-address">
