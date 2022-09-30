@@ -45,3 +45,17 @@ table {
 a {
   text-decoration: none;
 }
+
+.clearfix:before, .clearfix:after {
+  display: block;
+  content: '';
+  line-height: 0;
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+.clearfix {
+*zoom: 1;
+}

@@ -185,10 +185,88 @@
 .kanoNews {
   padding-top: 220px;
 }
+
 /* kanoInquiry */
 .kanoInquiry {
   padding: 150px 0 115px;
 }
+.inquiry-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.img-wrap {
+  position: absolute;
+  right: 0;
+  width: 51.16%;
+  height: 587px;
+  top: 0;
+  background-color: beige;
+  background: url(/spf2/img/main_inquiry_img.jpg) no-repeat center / cover;
+}
+.txt-wrap {
+  padding: 100px 0;
+}
+.txt-wrap .txt {
+  width: 48.84%;
+  padding-right: 100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.txt-wrap .txt p {
+  font-size: 18px;
+  letter-spacing: -0.03611em;
+  font-weight: 300;
+  line-height: 1.55em;
+  color: #939393;
+  margin-top: 30px;
+}
+.mail {
+  display: inline-block;
+  margin-top: 30px;
+}
+.mail i {
+  width: 35px;
+  height: 35px;
+  background-color: #ececec;
+  border-radius: 50%;
+  line-height: 35px;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+}
+.mail > span > span {
+  display: inline-block;
+  font-size: 15px;
+  color: #000;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.inquiry-btn {
+  display: flex;
+  margin: 70px 0 0 -7px;
+}
+.inquiry-btn .quiry_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 65px;
+  padding: 0 20px 0 30px;
+  margin: 0 7px;
+  border-radius: 20px;
+}
+.inquiry-btn .q_btn01 {
+  background-color: #bf1e2e;
+  color: #fff;
+}
+.inquiry-btn .q_btn02 {
+  background-color: #424242;
+  color: #fff;
+}
+
+
 /* footer */
 footer {
   border-top: 1px solid #ddd;
