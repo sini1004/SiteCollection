@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/b1e1ca77fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -29,6 +34,11 @@
     <div class="search_container">
       <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
     </div>
+    <div class="sns_container">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
     <a href="#" class="m_menuBtn">
       <span class="m_menuBtn_line1"></span>
       <span class="m_menuBtn_line2"></span>
@@ -42,59 +52,101 @@
     </div>
   </section>
 
+
   <!-- section2 -->
   <section id="section2">
     <div class="section2_wrap">
-      <a href="">
-        <div class="section2-one">
-          <img src="img/section02-1.jpg" alt="">
-          <h3 class="section2-title">EVENT</h3>
-          <p class="section2-txt">진행중인 다양한 이벤트를 즐겨보세요!</p>
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">          
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/section02-1.jpg" alt="EVENT">
+              <div class="text-box">
+                <h3 class="section2-title">EVENT</h3>
+                <p class="section2-txt">진행중인 다양한 이벤트를 즐겨보세요!</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/section02-2.jpg" alt="STORE">
+              <div class="text-box">
+                <h3 class="section2-title">STORE</h3>
+                <p class="section2-txt">뚜레쥬르 매장을 쉽고 빠르게 찾아보세요!</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/section02-3.jpg" alt="BREAD">
+              <div class="text-box">
+                <h3 class="section2-title">365 DAYS BREAD</h3>
+                <p class="section2-txt">매일 갓 구운 빵을 만나보세요!</p>
+              </div>
+            </a>
+          </div>
         </div>
-      </a>    
-      <a href="">
-        <div class="section2-two">
-          <h3 class="section2-title">STORE</h3>
-          <p class="section2-txt">뚜레쥬르 매장을 쉽고 빠르게 찾아보세요!</p>
-        </div>
-      </a> 
-      <a href="">
-        <div class="section2-third">
-          <h3 class="section2-title">365 DAYS BREAD</h3>
-          <p class="section2-txt">매일 갓 구운 빵을 만나보세요!</p>
-        </div>
-      </a>  
+      </div>
     </div>
   </section>
 
   <!-- section3 -->
   <section id="section3">
     <div class="section3_wrap inner">
-      <div class="section3-txt">
+      <div class="section3_txt" data-aos="fade-right">
         <h2>Reservation & Pick Up<span class="br"></span>Service</h2>
         <p>
           뚜레쥬르의 건강하고 맛있는 다양한 제품을<span class="br"></span>
           미리 예약, 결제하고 원하는 날짜와 원하는 매장에서 픽업하세요.
         </p>
-        <button>예약하기<span></span></button>
+        <button>예약하기<span><i class="fa-solid fa-arrow-right"></i></span></button>
       </div>
-      <div class="section3-image">
-        <img src="img/reservation-phone-t.png" alt="모바일 예약">
+      <div class="section3_image">
+        <img src="img/reservation-phone-t.png" alt="모바일">
       </div>
     </div>
   </section>
   
   <!-- section4 -->
   <section id="section4">
-    <div class="section1_wrap inner">
+    <div class="section4_wrap inner">
       <h2>INSTAGRAM</h2>
+      <div class="section4_instagram">
+
+      </div>
     </div>
   </section>
 
 
   <!-- footer -->
   <footer>
-
+    <div class="footer_wrap inner">
+      <div class="ft_logo">
+        <img src="img/ft_logo.png" alt="로고">
+      </div>
+      <div class="info_wrap">
+        <div class="info01">
+          <span>CJ푸드빌(주) </span>서울시 중구 마른내로34(초동 106-9번지)KT&G을지로타워 3, 9-11층
+        </div>
+        <div class="info02">
+          <p>TEL. 1577-0700</p>   
+          <p>E-MAIL. <a href="mailto:help_master@cj.net">help_master@cj.net</a></p>
+        </div> 
+      </div>      
+      <div class="info_link">
+        <ul>
+          <li><a href="https://www.cjfoodville.co.kr/main.asp">CJ푸드빌 홈페이지</a></li>
+          <li><a href="#">기사채용 안내</a></li>
+        </ul>        
+      </div>      
+    </div>
   </footer>
+  
+
+
+  <script src="js/sc01.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
