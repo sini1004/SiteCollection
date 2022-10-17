@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
     type: 'fraction'
   },
-  
+
   breakpoints: {
     // 화면의 넓이가 320px
     320: {
