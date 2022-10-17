@@ -9,6 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     type: 'fraction'
   },
 
+  
   breakpoints: {
     // 화면의 넓이가 320px
     320: {
@@ -25,5 +26,24 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 0
     }
+  },
+});
+
+
+var swiper = new Swiper(".mySwiper1", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween : 80,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
   },
 });
