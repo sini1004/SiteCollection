@@ -1,8 +1,6 @@
 /* ////////// 1400px ////////// */
 @media (max-width:1400px){   
-  .br {
-    display: inline;
-  }
+
 }
 
 /* ////////// 1023px ////////// */
@@ -72,6 +70,11 @@
 
 /* ////////// 960px ////////// */
 @media (max-width:768px){   
+  /* common */
+  .br {
+    display: inline;
+  }
+
   /* event_list */
   .event_list ul{
     display: flex;

@@ -14,7 +14,7 @@
 /* ////////// 1023px ////////// */
 @media (max-width:1023px){    
   /* header */
-  header {
+  /* header {
     border-top: 4px solid #0d4633;
   }
   .navbar {
@@ -43,7 +43,7 @@
   .navbar_menu.active,
   .navbar_links.active {
     display: flex;
-  }
+  } */
 
   /* section3 */
   .section3_wrap {

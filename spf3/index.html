@@ -7,6 +7,7 @@
   <title>뚜레쥬르</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,38 +15,47 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/b1e1ca77fa.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/header.js" defer></script>
 </head>
 <body>
   
   <!-- header -->
   <header>
-    <nav class="navbar">
-      <div class="navbar_logo">
-        <a href="index.html"><img src="img/logo.png" alt="로고"></a>
-      </div>
-      <ul class="navbar_menu">
-        <li><a href="brand_story.html">브랜드 스토리</a></li>
-        <li><a href="#">새로워진 뚜레쥬르</a></li>
-        <li><a href="#">제품 안내</a></li>
-        <li><a href="event_list.html">이벤트&멤버십</a></li>
-        <li><a href="#">쇼핑몰&케이크 배달신청</a></li>
-      </ul>
-      <ul class="navbar_links">
-        <li>
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/touslesjours_kr/"><i class="fa-brands fa-square-instagram"></i></a>
-        </li>
-      </ul>
-      <a href="#" class="navbar_toogleBtn">
-        <i class="fa-solid fa-bars"></i>
+    <div id="header" class="deactive">
+      <h1 id="logo" class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="">
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="brand_story.html">브랜드 스토리</a></li>
+          <li><a href="#">뚜레쥬르</a></li>
+          <li><a href="#">제품 안내</a></li>
+          <li><a href="event_list.html">이벤트&멤버십</a></li>
+          <li><a href="#">쇼핑몰&케이크 배달신청</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="hamburger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
       </a>
-    </nav>
+      <div class="overlay">
+        <div class="menu">
+          <ul>
+            <li><a href="brand_story.html">브랜드 스토리</a></li>
+            <li><a href="#">뚜레쥬르</a></li>
+            <li><a href="#">제품 안내</a></li>
+            <li><a href="event_list.html">이벤트&멤버십</a></li>
+            <li><a href="#">쇼핑몰&케이크 배달신청</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </header>
 
   <div class="mainvideo">
