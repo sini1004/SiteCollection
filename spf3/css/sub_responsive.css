@@ -1,6 +1,15 @@
+/* ////////// 1400px ////////// */
+@media (max-width:1400px){   
+  .br {
+    display: inline;
+  }
+}
 
 /* ////////// 1023px ////////// */
 @media (max-width:1023px){   
+  /* .br {
+    display: inline;
+  } */
   /* event_list */
   .sub_menu {
     border-top: 1px solid #e1e1e1;
