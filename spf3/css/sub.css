@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600&display=swap');
+
 /* event_list */
 
 .sub_container {
@@ -81,4 +83,61 @@
   font-size: 19px;
   color: #9f9f9f;
   font-weight: 300;
+}
+
+/* brand story */
+/* event_list */
+
+.sub_container {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.Brand{
+  width: 100%;
+  padding: 75px 0 50px;
+  background-color: #0d4633;
+  position: relative;
+}
+.Brand h2 {
+  color: #FFF;
+  text-align: center;
+}
+.Brand .sub_menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.Brand .sub_menu li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.Brand .sub_menu .acitve > a {
+  color: #FFF;
+  font-weight: 700;
+}
+.Brand .sub_menu li a {
+  color: #FFF;
+}
+.brand_title {
+  margin-top: 100px;
+}
+.brand_title .brand_img {
+  position: absolute;
+  bottom: 0;
+}
+.brand_title .brand_img img {
+  width: 50%;
+  text-align: center;
+  z-index: 9;
+}
+.brand_txt {
+  font-family: 'Roboto Serif', serif;
+  font-size: 100px;
+  text-shadow: 7px 5px 13px rgba(0,0,0,0.3);
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: -5px;
 }
