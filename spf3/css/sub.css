@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600&display=swap');
 
 /* event_list */
+#header nav ul li a {
+  color: #222;
+}
+.hamburger-button span{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #0d4633;
+  top: 0;
+  transition: .2s;
+}
 
 .sub_container {
   position: relative;
@@ -9,7 +20,7 @@
 
 .subMenu {
   width: 100%;
-  padding: 75px 0 50px;
+  padding: 175px 0 50px;
 }
 .subMenu h2 {
   color: #0d4633;
@@ -98,6 +109,7 @@
   padding: 75px 0 50px;
   background-color: #0d4633;
   position: relative;
+  margin-top: 80px;
 }
 .Brand h2 {
   color: #FFF;

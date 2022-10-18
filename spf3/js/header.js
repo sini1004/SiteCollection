@@ -1,12 +1,3 @@
-// const toogleBtn = document.querySelector('.navbar_toogleBtn');
-// const menu = document.querySelector('.navbar_menu');
-// const links = document.querySelector('.navbar_links');
-
-// toogleBtn.addEventListener('click', () => {
-//   menu.classList.toggle('active');
-//   links.classList.toggle('active');
-// })
-
 
 $(function(){
   // 스크롤 시 header fade-in
@@ -24,7 +15,7 @@ $(function(){
           $("#header").addClass("deactive");
           $("#logo").removeClass("logoc");
           $("#logo").addClass("logo");
-          $("#header").css("height", "100px");
+          $("#header").css("height", "80px");
           $("nav ul li").children("a").css("color", "white");
           $(".hamburger-button span").css("background", "white");
       }

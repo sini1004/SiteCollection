@@ -2,7 +2,7 @@
 #header {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;
@@ -11,7 +11,8 @@
   align-items: center;
   padding: 0 20px;
   z-index: 9999;
-  box-sizing: border-box;
+  box-sizing: border-box;   
+  border-bottom: 1px solid #eeeeee;
 }
 
 .active{
@@ -34,7 +35,7 @@
   -webkit-transition-timing-function:ease;
 }
 .deactive-c {
-  color: var(--color-black);;
+  color: #000;
 }
 
 .logoc {
@@ -193,10 +194,10 @@
 @media screen and (max-width:1280px){
   /* header */
   #header nav {
-      display: none;
+    display: none;
   }
   #header .hamburger-button {
-      display: block;
+    display: block;
   }
 }
 
@@ -207,11 +208,11 @@
     height: 30px;
   }
   #header .logoc {
-      width: 109px;
-      height: 30px;
+    width: 109px;
+    height: 30px;
   }
   #header nav {
-      display: none;
+    display: none;
   }
 }
 

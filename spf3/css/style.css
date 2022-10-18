@@ -14,54 +14,6 @@ h2 {
 }
 
 
-/* ////////// header ////////// */
-/* header {
-  position: relative;
-  border-top: 8px solid #0d4633;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 20px 12px;
-}
-.navbar_logo img{
-  width: 70%;
-  margin-top: 5px;
-}
-.navbar_menu {
-  display: flex;
-  padding-left: 0; 
-}
-.navbar_menu li {
-  padding: 8px 12px;
-}
-.navbar_menu li a {
-  color: #333;
-}
-.navbar_menu li a:hover {
-  color: #0d4633;
-}
-.navbar_links {
-  display: flex;
-}
-.navbar_links li {
-  font-size: 20px;
-  padding: 8px;
-}
-.navbar_links li a {
-  color: #0d4633;
-}
-.navbar_toogleBtn {
-  display: none;
-  position: absolute;
-  right: 20px;
-  font-size: 24px;
-  color: #0d4633;
-} */
-
-
 /* ////////// video ////////// */
 .mainvideo {
 
