@@ -16,7 +16,7 @@ h2 {
 
 /* ////////// video ////////// */
 .mainvideo {
-
+  margin-top: 80px;
 }
 .video {
   position: relative;
