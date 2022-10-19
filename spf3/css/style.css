@@ -314,3 +314,16 @@ footer {
   font-size: 13px;
   color: #fff;
 }
+
+.info_sns {
+  padding-top: 20px;
+}
+.info_sns ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.info_sns ul li a {
+  font-size: 28px;
+  color: #fff;
+}

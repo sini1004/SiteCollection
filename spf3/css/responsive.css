@@ -93,4 +93,7 @@
   .info_link ul li {
     padding: 5px 10px;
   }
+  .info_sns ul li a {
+    font-size: 21px;
+  }
 }
