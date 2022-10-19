@@ -68,11 +68,17 @@
   }
 }
 
-/* ////////// 960px ////////// */
+/* ////////// 768px ////////// */
 @media (max-width:768px){   
   /* common */
   .br {
     display: inline;
+  }
+  .subMenu {
+    padding: 125px 0 50px;
+  }
+  .sub_menu li a {
+    font-size: 13px;
   }
 
   /* event_list */
@@ -92,5 +98,30 @@
   .event_content .event_date{
     font-size: 16px;
   }
+  .Brand {
+    margin-top: 60px;
+    padding: 65px 0 50px;
+  }
+  .sub_menu li {
+    margin: 0 10px;
+}
+  .Brand .sub_menu li {
+    margin: 0 10px;
+  }
+  .story01_1_txt h3 {
+    font-size: 38px;
+  }
+  .brand_txt {
+    font-size: 50px;
+    letter-spacing: -3px;
+  }
 }
 
+
+/* ////////// 470px ////////// */
+@media (max-width:470px){   
+  .event_list ul li {
+    flex-basis: calc(96%  - 10px);
+    margin: 0 auto;
+  }
+}

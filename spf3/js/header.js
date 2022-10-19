@@ -7,7 +7,7 @@ $(function(){
         $("#header").addClass("active");
         $("#logo").removeClass("logo");
         $("#logo").addClass("logoc");
-        $("#header").css("height", "80px");
+        // $("#header").css("height", "80px");
         $("nav ul li").children("a").css("color", "#222");
         $(".hamburger-button span").css("background", "#222");
       }else{
@@ -15,7 +15,7 @@ $(function(){
           $("#header").addClass("deactive");
           $("#logo").removeClass("logoc");
           $("#logo").addClass("logo");
-          $("#header").css("height", "80px");
+          // $("#header").css("height", "80px");
         //   $("nav ul li").children("a").css("color", "white");
         //   $(".hamburger-button span").css("background", "white");
       }

@@ -186,9 +186,10 @@
   padding: 20px 0;
   border-bottom: 1px solid #e5e5e5;
 }
-.overlay .menu ul li a {
+.overlay .menu ul li > a {
   font-size: 24px;
   padding: 0 30px;
+  color: #222;
 }
 
 @media screen and (max-width:1280px){
@@ -203,29 +204,39 @@
 
 
 @media screen and (max-width:768px){
+  #header {
+    height: 60px;
+  }
   #header .logo {
-    width: 109px;
+    width: 130px;
     height: 30px;
+    margin-top: 17px;
+  }
+  #header .logo img {
+    width: 100%;
   }
   #header .logoc {
-    width: 109px;
+    width: 130px;
     height: 30px;
+    margin-top: 17px;
+  }
+  #header .logoc img {
+    width: 100%;
   }
   #header nav {
     display: none;
   }
-}
 
-/* @media screen and (max-width:460px){
-  #header .logo {
-      width: 109px;
-      height: 30px;
+  .hamburger-button {
+    width: 25px;
+    height: 20px;
+    margin-top: 4px;
   }
-  #header .logoc {
-      width: 109px;
-      height: 30px;
+  .hamburger-button span:nth-child(2),
+  .hamburger-button span:nth-child(3){
+    top: 9px;
   }
-  #header nav {
-      display: none;
+  .hamburger-button span:nth-child(4){
+    top: 18px;
   }
-} */
+}

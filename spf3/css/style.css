@@ -16,12 +16,13 @@ h2 {
 
 /* ////////// video ////////// */
 .mainvideo {
+  width: 100%;
   margin-top: 80px;
 }
 .video {
   position: relative;
-  width: 100vw;
-  height: 56vw;
+  width: 100;
+  height: 55vw;
 }
 
 
@@ -295,7 +296,7 @@ footer {
   padding: 0 5px;
   display: inline-block;
 }
-.info_wrap .info02 > p a {
+.info_wrap .info02 > p > a {
   color: #fff;
 }
 .info_link {

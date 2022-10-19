@@ -67,7 +67,10 @@
   h2 {
     font-size: 38px;
   }
-  
+  /*  */
+  .mainvideo {
+    margin-top: 60px;
+  }
   /* section2 */
   .swiper-container::after,
   .swiper-container::before {
