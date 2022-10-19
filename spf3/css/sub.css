@@ -110,6 +110,7 @@
   background-color: #0d4633;
   position: relative;
   margin-top: 80px;
+  overflow: hidden;
 }
 .Brand h2 {
   color: #FFF;
@@ -133,17 +134,31 @@
   color: #FFF;
 }
 .brand_title {
+  position: relative;
   margin-top: 100px;
+  z-index: 99;
 }
-.brand_title .brand_img {
+.Brand .brand_img {
   position: absolute;
   bottom: 0;
+  left: calc(50% - 125px);
+  z-index: 9;
+  transition: all .9s;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transform: translateY(0px);
 }
-.brand_title .brand_img img {
-  width: 50%;
+.Brand .roll {
+  opacity: 1;
+  transform: translateY(200px);
+}
+.Brand .brand_img img {
+  width: 250px;
   text-align: center;
   z-index: 9;
 }
+
+
 .brand_txt {
   font-family: 'Roboto Serif', serif;
   font-size: 100px;

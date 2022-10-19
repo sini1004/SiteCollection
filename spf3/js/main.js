@@ -47,3 +47,19 @@ var swiper = new Swiper(".mySwiper1", {
     el: ".swiper-pagination",
   },
 });
+
+
+$(window).scroll(function(){
+  let scrollY = $(window).scrollTop(); //현재스크롤값
+  console.log(scrollY);
+  if(scrollY >30){
+    $('.brand_img').addClass('roll');
+  }else {
+    $('.brand_img').removeClass('roll');
+  }
+  
+
+});
+
+
+// https://velog.io/@ysrz99/%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9C%84%EC%B9%98%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%B3%80%ED%95%98%EB%8A%94-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98
