@@ -43,6 +43,13 @@ var swiper = new Swiper(".mySwiper1", {
     modifier: 1,
     slideShadows: false,
   },
+  // loop : true, // 슬라이드 반복
+
+  autoplay : { // 자동 재생
+    delay : 1, // 딜레이 0
+  },
+  speed : 3000, // 슬라이드 속도 2초
+
   pagination: {
     el: ".swiper-pagination",
   },
