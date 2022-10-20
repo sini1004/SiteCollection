@@ -310,3 +310,36 @@ footer {
   font-size: 28px;
   color: #fff;
 }
+
+
+
+/* popup */
+.popup { 
+  position:absolute; 
+  top:50%; 
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:#fff;
+  border-radius:16px;
+  text-align:center;
+  padding:40px;
+  z-index:99999;
+  display: none;
+}
+.popup .btn_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+.popup .close {
+  display:inline-block;
+  width: 24px;
+  height: 24px;
+  background-position:-396px -514px;
+}
+.popup button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
