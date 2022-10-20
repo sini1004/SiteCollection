@@ -322,9 +322,22 @@ footer {
   background:#fff;
   border-radius:16px;
   text-align:center;
-  padding:40px;
-  z-index:99999;
+  padding:40px 20px;
+  z-index:999;
+  box-shadow: 4px 4px 9px rgba(0,0,0,0.3);
   display: none;
+}
+.popup img {
+  border-radius: 16px;
+  margin: 10px 0;
+}
+.popup h5 {
+  font-size: 21px;
+  padding: 20px 0;
+}
+.popup p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 .popup .btn_close {
   position: absolute;
@@ -337,9 +350,19 @@ footer {
   width: 24px;
   height: 24px;
   background-position:-396px -514px;
+  font-size: 21px;
+  color: #0d4633;
 }
 .popup button {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+}
+.popup .btn_link {
+  width: 60%;
+  padding: 15px;
+  background-color: #0d4633;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 10px;
 }

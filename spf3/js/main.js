@@ -69,11 +69,12 @@ $(window).scroll(function(){
 
 $(window).ready(function(){
   $('.popup').show();
-  console.log('팝업 노출')
+  console.log('팝업 노출');
+  
+  // 로그인 팝업창 X
+  $('.close').click(function(){
+    $('.popup').hide();
+    console.log('클릭했어요');
+  });
 });
 
-// 로그인 팝업창 X
-$('.btn_close').click(function(){
-  console.log('클릭했어요');
-  // $('.popup').css({display},{none});
-});
