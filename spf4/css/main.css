@@ -68,3 +68,9 @@ ol, ul {
 .promotion .row {
   margin-top: 40px;
 }
+
+.img01 {
+  width: 100%;
+  height: 100px;
+  background-image: url(img/promotion01.webp);
+}
