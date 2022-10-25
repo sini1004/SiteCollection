@@ -82,13 +82,16 @@ ol, ul {
 }
 .youtube .youtube_bg .youtube_btn {
   width: 100px;
-  height: 80px;
-  top: calc(50% - 80px);
-  left: calc(50%);
+  height: 100px;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
   background: transparent;
   border: none;
 }
-
+.youtube .modal-header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
 
 .story {   
   width: 100%;
